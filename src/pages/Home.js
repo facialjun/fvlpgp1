@@ -27,7 +27,7 @@ const Home = () => {
         };
 
         try {
-            const response = await axios.post('http://192.168.0.12:8080/info/submit', data); // 변경된 서버 주소
+            const response = await axios.post('http://localhost:8080/info/submit', data); // 변경된 서버 주소
             console.log('Data submitted:', response.data);
             alert('제출에 성공했습니다!');
         } catch (error) {

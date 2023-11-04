@@ -27,7 +27,7 @@ const Home = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8080/info/submit', data); // 변경된 서버 주소
+            const response = await axios.post('http://3.36.127.249:3000/info/submit', data); // 변경된 서버 주소
             console.log('Data submitted:', response.data);
             alert('제출에 성공했습니다!');
         } catch (error) {
@@ -56,7 +56,7 @@ const Home = () => {
                     <div style={{ marginRight: '20px', color: 'white' }}>
                         <h2>이름</h2>
                         <input
-                            style={{ width: '120px', textAlign: 'center' }}
+                            style={{ width: '80px', textAlign: 'center' }}
                             type="text"
                             placeholder="이름"
                             value={name}
@@ -67,7 +67,7 @@ const Home = () => {
                     <div style={{ marginRight: '20px', color: 'white' }}>
                         <h2>전화번호</h2>
                         <input
-                            style={{ width: '120px', textAlign: 'center' }}
+                            style={{ width: '80px', textAlign: 'center' }}
                             type="text"
                             placeholder="전화번호(-)없이"
                             value={phoneNumber}
